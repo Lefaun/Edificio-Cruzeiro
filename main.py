@@ -47,13 +47,6 @@ with col3:
    st.header("Apartamento T1 RC Dto")
    st.image("T3 RC ESQ.png")
 
-st.header("Apartamento T1 RC FTE")
-def show_pdf(file_path):
-        with open("T1 RC FTE.pdf", "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="200" height="200" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
-
 
 video_file = open('video4.mp4', 'rb')
 video_bytes = video_file.read()
@@ -80,7 +73,7 @@ with col1:
 
 with col2:
    st.header("Apartamento T1 RC Dto")
-   components.iframe("https://v3d.net/oed", width=350, height=300)
+   components.iframe("https://v3d.net/oei", width=350, height=300)
    st.markdown(components.iframe, unsafe_allow_html=True)
 
 
