@@ -23,16 +23,28 @@ st.title("Edficio Cruzeiro")
 st.header("Plantas dos Apartamentos"
 col1, col2, col3 = st.columns(3)
 with col1:
-   st.header("Museu - Arte Urbana ")
-   st.image("1foto.png")
+   st.header("Apartamento T1 RC ESQ")
+   def show_pdf(file_path):
+            with open("T1 RC ESQ.pdf", "rb") as f:
+                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
 
 with col2:
-   st.header("Criação de APP Online")
-   st.image("2foto.png")
+   st.header("Apartamento T1 RC Dto")
+   def show_pdf(file_path):
+            with open("T1 RC DTO.pdf", "rb") as f:
+                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
 
 with col3:
    st.header("Modelação Urbana")
-   st.image("4foto.png")
+   def show_pdf(file_path):
+            with open("T1 RC FTE.pdf", "rb") as f:
+                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+            st.markdown(pdf_display, unsafe_allow_html=True)
 
 
 video_file = open('video2.mp4', 'rb')
