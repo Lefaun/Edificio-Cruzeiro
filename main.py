@@ -10,17 +10,17 @@ def add_bg_from_local(image_file):
     f"""
     <style>
     .stApp {{
-        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-image: url(data:image/{"jpeg"};base64,{encoded_string.decode()});
         background-size: cover
     }}
     </style>
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('backg.png')    
+add_bg_from_local('D2C15DDC-4A94-4AC5-8A6C-DF8F6D571B90_1_105_c.jpeg')    
 
-st.title("Museu Virtual da Arte Urbana - AMadora")
-
+st.title("Edficio Cruzeiro")
+st.header("Plantas dos Apartamentos"
 col1, col2, col3 = st.columns(3)
 with col1:
    st.header("Museu - Arte Urbana ")
