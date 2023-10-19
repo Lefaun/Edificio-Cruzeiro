@@ -55,7 +55,7 @@ st.video(video_bytes)
 
 col1, col2 = st.columns(2)
 with col1:
-   st.header("Pornenores da Construção")
+   st.header("Pormenores da Construção")
    st.image("Varanda Panoramca.jpg")
 
 with col2:
@@ -67,7 +67,7 @@ with col1:
    st.header(" Excelente Localização")
    st.image("Envolvente.jpg")
 with col2:
-   st.header("Exceentes Acabamentos")
+   st.header("Excelentes Acabamentos")
    st.image("wc2.jpg")
 
 col1, col2 = st.columns(2)
