@@ -75,12 +75,12 @@ with col2:
 col1, col2 = st.columns(2)
 with col1:
    st.header("Apartamento T1 RC ESQ")
-   components.iframe("https://v3d.net/oed", width=350, height=300)
+   components.iframe("https://v3d.net/o4m", width=350, height=300)
    st.markdown(components.iframe, unsafe_allow_html=True)
 
 with col2:
    st.header("Apartamento T1 RC Dto")
-   components.iframe("https://v3d.net/o48", width=350, height=300)
+   components.iframe("https://v3d.net/oed", width=350, height=300)
    st.markdown(components.iframe, unsafe_allow_html=True)
 
 
