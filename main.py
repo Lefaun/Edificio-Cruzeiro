@@ -34,6 +34,19 @@ with col3:
    st.header("Apartamento T1 RC Dto")
    st.image("T3 RC ESQ.png")
 
+col1, col2, col3 = st.columns(3)
+with col1:
+   st.header("Apartamento T1 RC ESQ")
+   st.image("T1 RC DTO.PNG.png")
+
+with col2:
+   st.header("Apartamento T1 RC Dto")
+   st.image("T1 RC FTE.png")
+
+with col3:
+   st.header("Apartamento T1 RC Dto")
+   st.image("T3 RC ESQ.png")
+
 st.header("Apartamento T1 RC FTE")
 def show_pdf(file_path):
         with open("T1 RC FTE.pdf", "rb") as f:
@@ -48,10 +61,29 @@ video_bytes = video_file.read()
 st.video(video_bytes)
 
 
+col1, col2 = st.columns(2)
+with col1:
+   st.header("Apartamento T1 RC ESQ")
+   components.iframe("https://v3d.net/oeh", width=350, height=300)
+   st.markdown(components.iframe, unsafe_allow_html=True)
 
-components.iframe("https://v3d.net/oeh", width=700, height=600)
-st.markdown(components.iframe, unsafe_allow_html=True)
+with col2:
+   st.header("Apartamento T1 RC Dto")
+   components.iframe("https://v3d.net/oi0", width=350, height=300)
+   st.markdown(components.iframe, unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+with col1:
+   st.header("Apartamento T1 RC ESQ")
+   components.iframe("https://v3d.net/oed", width=350, height=300)
+   st.markdown(components.iframe, unsafe_allow_html=True)
+
+with col2:
+   st.header("Apartamento T1 RC Dto")
+   components.iframe("https://v3d.net/o48", width=350, height=300)
+   st.markdown(components.iframe, unsafe_allow_html=True)
 
 
-components.iframe("https://v3d.net/oi0", width=700, height=600)
-st.markdown(components.iframe, unsafe_allow_html=True)
+
+
+
