@@ -41,8 +41,6 @@ custom_css = """
   }
 </style>
 """
-,
-  unsafe_allow_html=True)
 
 # Display the HTML and Streamlit content
 st.markdown(video_html, unsafe_allow_html=True)
