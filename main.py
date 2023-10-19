@@ -28,7 +28,7 @@ with col1:
             with open("T1 RC ESQ.pdf", "rb") as f:
                 base64_pdf = base64.b64encode(f.read()).decode('utf-8')
             pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100" height="100" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
+    st.markdown(pdf_display, unsafe_allow_html=True)
 
 with col2:
    st.header("Apartamento T1 RC Dto")
@@ -36,7 +36,7 @@ with col2:
             with open("T1 RC DTO.pdf", "rb") as f:
                 base64_pdf = base64.b64encode(f.read()).decode('utf-8')
             pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100" height="100" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
+    st.markdown(pdf_display, unsafe_allow_html=True)
 
 
 st.header("Apartamento T1 RC FTE")
@@ -44,7 +44,7 @@ def show_pdf(file_path):
         with open("T1 RC FTE.pdf", "rb") as f:
             base64_pdf = base64.b64encode(f.read()).decode('utf-8')
         pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100" height="100" type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+st.markdown(pdf_display, unsafe_allow_html=True)
 
 
 video_file = open('video4.mp4', 'rb')
