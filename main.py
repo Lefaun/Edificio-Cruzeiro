@@ -47,12 +47,16 @@ with col3:
             st.markdown(pdf_display, unsafe_allow_html=True)
 
 
-video_file = open('video2.mp4', 'rb')
+video_file = open('video4.mp4', 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
 col1, col2 = st.columns(2)
 
 with col1:
-   components.iframe("https://v3d.net/fej", width=700, height=600)
+   components.iframe("https://v3d.net/oeh", width=700, height=600)
+   st.markdown(components.iframe, unsafe_allow_html=True)
+
+with col2:
+   components.iframe("https://v3d.net/oi0", width=700, height=600)
    st.markdown(components.iframe, unsafe_allow_html=True)
