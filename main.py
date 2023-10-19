@@ -3,48 +3,21 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 import base64
-#def add_bg_from_local(image_file):
- #   with open(image_file, "rb") as image_file:
-  #      encoded_string = base64.b64encode(image_file.read())
- #   st.markdown(
- #   f"""
-  #  <style>
-  #  .stApp {{
-   #     background-image: url(data:image/{"jpeg"};base64,{encoded_string.decode()});
-    #    background-size: cover
-  #  }}
-  #  </style>
- #  """
- #   unsafe_allow_html=True
-#    )
-#add_bg_from_local('D2C15DDC-4A94-4AC5-8A6C-DF8F6D571B90_1_105_c.jpeg')    
-video_html = """
-<video autoplay muted loop id="bgVideo">
-  <source src="video4.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-"""
-
-# Custom CSS for layout
-custom_css = """
-<style>
-  body {
-    background: transparent;
-  }
-  #bgVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-  }
-</style>
-"""
-
-# Display the HTML and Streamlit content
-st.markdown(video_html, unsafe_allow_html=True)
-st.markdown(custom_css, unsafe_allow_html=True)
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpeg"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+   </style>
+   """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('D2C15DDC-4A94-4AC5-8A6C-DF8F6D571B90_1_105_c.jpeg')    
 
 # Streamlit content
 
