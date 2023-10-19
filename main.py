@@ -56,19 +56,19 @@ st.video(video_bytes)
 col1, col2 = st.columns(2)
 with col1:
    st.header("Pornenores da Construção")
-   st.image("")
+   st.image("Varanda Panoramca.jpg")
 
 with col2:
    st.header("Quarto Com Suite")
-   st.image("")
+   st.image("quarto suite2.jpg")
 
 col1, col2 = st.columns(2)
 with col1:
-   st.header(" Varanda Panoramica")
-   st.image("")
+   st.header(" Eecelente Localização")
+   st.image("quarto suite.jpg")
 with col2:
    st.header("Exceentes Acabamentos")
-   st.image("")
+   st.image("wc3.jpg")
 
 col1, col2 = st.columns(2)
 with col1:
